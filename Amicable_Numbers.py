@@ -11,4 +11,5 @@ for j in range(1,b):
 if s==b and y==a:
     print("Amicable")
 else:
-    print('Not Amicable')
+    print("Not Amicable")
+    
