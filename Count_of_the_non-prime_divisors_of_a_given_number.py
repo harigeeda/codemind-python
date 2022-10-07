@@ -1,20 +1,18 @@
-b=int(input())
-c=[]
-d=[]
-e=[]
-for i in range(1,b+1):
+a=int(input())
+s=[]
+k=[]
+l=[]
+for i in range(1,a+1):
     if i>1:
         for j in range(2,i):
-            if (i%j==0):
+            if i%j==0:
                 break
         else:
-            c.append(i)
-for j in range(1,b+1):
-    if b%j==0:
-        d.append(j)
-for k in c:
-    if k in d:
-        e.append(k)
-z=len(e)
-y=len(d)
-print(y-z)
+            s.append(i)
+for j in range(1,a+1):
+    if a%j==0:
+        k.append(j)
+for m in k:
+    if m not in s:
+        l.append(m)
+print(len(l))
